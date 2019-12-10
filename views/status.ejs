@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Status</title>
+</head>
+<body>
+	<% if(status==0){ %>
+		<h1>Try Again</h1>
+		<br>
+		<a href="/new">Click here</a>
+	<% }else{ %>
+		<h1>Successfully registered. 
+			<span style="color: blue"><%= Nuser.name %></span>
+		</h1>
+		<h3>You will receive confirmation mail on 
+			<span style="color: blue"><%= Nuser.email %> </span>
+		</h3>
+		<a href="/">Click here to go back</a>
+	<% } %>
+</body>
+</html>
