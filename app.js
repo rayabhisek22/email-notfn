@@ -68,7 +68,7 @@ app.post("/",(req,res)=>{
 	})
 })
 
-var Port = 8000 | process.env.port;
+var Port =process.env.PORT;
 app.listen(Port,(err)=>{
 	if(err) console.log(err);
 	else console.log("Started");
