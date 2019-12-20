@@ -10,17 +10,12 @@ var app = express();
 var User = require('./models/user');
 
 //Database connection
-/*mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser: true,useUnifiedTopology: true},err=>{
-	if(err) console.log(err);
-	else
-		console.log("connected");
-});*/
-var url = 'mongodb+srv://admin:Abcabcabv34@cluster0-l7gwx.mongodb.net/test5?retryWrites=true&w=majority';
-mongoose.connect(url, {useNewUrlParser: true, useFindAndModify:false, useUnifiedTopology: true}, err=>{
+mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser: true,useUnifiedTopology: true},err=>{
 	if(err) console.log(err);
 	else
 		console.log("connected");
 });
+
 
 
 //Mail API connection
